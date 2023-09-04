@@ -134,16 +134,16 @@ while running:
         except Exception as e:
             print(f"Error reading other sensor data: {e}")
 
-    # print(f"Soil Moisture: {(SoilMoisture / 4096) * 100} %")
+    # print(f"Soil Moisture: {((4096-SoilMoisture) / 4096) * 100} %")
     # print(f"Temperature: {Temperature} C")
     # print(f"Humidity: {Humidity} %")
     # print(f"UV Index: {UVIndex}")
     # print(f"Light Intensity: {Light}")
 
     # Check sensor parameters and select the appropriate animation
-    if SoilMoisture < 100:  # Adjust the humidity threshold as needed
+    if (4096-SoilMoisture) < 100:  # Adjust the humidity threshold as needed
         current_animation = emoji_animations['dead']
-    elif SoilMoisture > 100 and SoilMoisture < 2360:  # Adjust the temperature threshold as needed
+    elif (4096-SoilMoisture) > 100 and (4096-SoilMoisture) < 2360:  # Adjust the temperature threshold as needed
         current_animation = emoji_animations['angry' + str(randomNum)]
     elif Light < 5:  # Adjust the humidity threshold as needed
         current_animation = emoji_animations['sleep1']
@@ -175,7 +175,7 @@ while running:
     screen.blit(HumIcon, (105, 7))
 
     # Render and display Soil Moisture text
-    text = str(int((SoilMoisture / 4096) * 100)) + ' %'
+    text = str(int(((4096-SoilMoisture) / 4096) * 100)) + ' %'
     text_surface = font.render(text, True, (255, 255, 255))
     text_surface = pygame.transform.rotate(text_surface, -90)
     screen.blit(text_surface, (10, 5))
