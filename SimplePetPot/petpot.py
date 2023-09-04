@@ -206,7 +206,7 @@ while running:
     clock.tick(30)
 
 # Clean up video capture objects and quit
-for cap in emoji_animations.values()
+for cap in emoji_animations.values():
     cap.release()
 
 try:
