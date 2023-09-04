@@ -1,0 +1,71 @@
+root@unihiker:~# bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+root user detected. Typical installs should be done as a regular user.
+If you are running this script using sudo, please cancel and rerun without sudo.
+--nodered-user can be used to specify the user otherwise installation will happen under /root.
+If you know what you are doing as root, please continue.
+
+Are you really sure you want to install as root ? (y/N) ? y
+
+ 
+This script checks the version of node.js installed is 14 or greater. It will try to
+install node 18 if none is found. It can optionally install node 16, 18 or 20 LTS for you.
+ 
+If necessary it will then remove the old core of Node-RED, before then installing the latest
+version. You can also optionally specify the version required.
+ 
+It also tries to run 'npm rebuild' to refresh any extra nodes you have installed
+
+Running Node-RED install for user root at /root on debian
+
+
+This can take 20-30 minutes on the slower Pi versions - please wait.
+
+  Stop Node-RED                       
+  Remove old version of Node-RED      
+  Stop Node-RED                       ✔
+  Remove old version of Node-RED      ✔
+  Remove old version of Node.js       ✔   
+  Install Node.js 18 LTS              ✔   v18.17.1   Npm 9.6.7
+  Clean npm cache                     ✔
+  Install Node-RED core               ✔   3.0.2
+  Move global nodes to local          -
+  Npm rebuild existing nodes          ✔
+  Install extra Pi nodes              ✔
+  Add shortcut commands               ✔
+  Update systemd script               ✔
+Any errors will be logged to   /var/log/nodered-install.log
+
+
+All done.
+You can now start Node-RED with the command  node-red-start
+  or using the icon under   Menu / Programming / Node-RED
+Then point your browser to localhost:1880 or http://{your_pi_ip-address}:1880
+
+Started :  Sun 03 Sep 2023 12:02:42 PM CST 
+Finished:  Sun 03 Sep 2023 12:09:17 PM CST
+ 
+**********************************************************************************
+ ### WARNING ###
+ DO NOT EXPOSE NODE-RED TO THE OPEN INTERNET WITHOUT SECURING IT FIRST
+ 
+ Even if your Node-RED doesn't have anything valuable, (automated) attacks will
+ happen and could provide a foothold in your local network
+ 
+ Follow the guide at https://nodered.org/docs/user-guide/runtime/securing-node-red
+ to setup security.
+ 
+ ### ADDITIONAL RECOMMENDATIONS ###
+  - You can customise the initial settings by running:
+ 
+      node-red admin init
+ 
+  - After running Node-RED for the first time, change the ownership of the settings
+    file to 'root' to prevent unauthorised changes:
+ 
+      sudo chown root:root ~/.node-red/settings.js
+ 
+  - Do not run Node-RED as root or an administraive account
+ 
+**********************************************************************************
+

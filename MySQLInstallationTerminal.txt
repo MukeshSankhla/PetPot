@@ -1,0 +1,236 @@
+root@unihiker:~# apt-get update
+Hit:1 http://security.debian.org buster/updates InRelease
+Hit:2 https://deb.nodesource.com/node_18.x buster InRelease                    
+Hit:3 http://httpredir.debian.org/debian buster InRelease                      
+Hit:4 http://httpredir.debian.org/debian buster-updates InRelease
+Hit:5 http://httpredir.debian.org/debian buster-backports InRelease
+Reading package lists... Done
+root@unihiker:~# sudo apt install mariadb-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  galera-3 gawk libaio1 libcgi-fast-perl libcgi-pm-perl
+  libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libencode-locale-perl
+  libfcgi-perl libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
+  libhttp-date-perl libhttp-message-perl libio-html-perl
+  liblwp-mediatypes-perl libmariadb3 libreadline5 libsigsegv2
+  libterm-readkey-perl libtimedate-perl liburi-perl lsof mariadb-client-10.3
+  mariadb-client-core-10.3 mariadb-common mariadb-server-10.3
+  mariadb-server-core-10.3 mysql-common rsync socat
+Suggested packages:
+  gawk-doc libclone-perl libmldbm-perl libnet-daemon-perl
+  libsql-statement-perl libdata-dump-perl libipc-sharedcache-perl libwww-perl
+  mariadb-test netcat-openbsd tinyca
+The following NEW packages will be installed:
+  galera-3 gawk libaio1 libcgi-fast-perl libcgi-pm-perl
+  libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libencode-locale-perl
+  libfcgi-perl libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
+  libhttp-date-perl libhttp-message-perl libio-html-perl
+  liblwp-mediatypes-perl libmariadb3 libreadline5 libsigsegv2
+  libterm-readkey-perl libtimedate-perl liburi-perl lsof mariadb-client-10.3
+  mariadb-client-core-10.3 mariadb-common mariadb-server mariadb-server-10.3
+  mariadb-server-core-10.3 mysql-common rsync socat
+0 upgraded, 33 newly installed, 0 to remove and 184 not upgraded.
+Need to get 65.7 kB/21.0 MB of archives.
+After this operation, 169 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://security.debian.org buster/updates/main arm64 mariadb-common all 1:10.3.39-0+deb10u1 [33.5 kB]
+Get:2 http://httpredir.debian.org/debian buster/main arm64 libsigsegv2 arm64 2.12-2 [32.3 kB]
+Fetched 65.7 kB in 0s (203 kB/s)        
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+Selecting previously unselected package libsigsegv2:arm64.
+(Reading database ... 99442 files and directories currently installed.)
+Preparing to unpack .../libsigsegv2_2.12-2_arm64.deb ...
+Unpacking libsigsegv2:arm64 (2.12-2) .......................................] 
+Setting up libsigsegv2:arm64 (2.12-2) ......................................] 
+Selecting previously unselected package gawk................................] 
+(Reading database ... 99451 files and directories currently installed.)
+Preparing to unpack .../00-gawk_1%3a4.2.1+dfsg-1_arm64.deb ...
+Unpacking gawk (1:4.2.1+dfsg-1) ...
+Selecting previously unselected package mysql-common........................] 
+Preparing to unpack .../01-mysql-common_5.8+1.0.5_all.deb ...
+Unpacking mysql-common (5.8+1.0.5) .........................................] 
+Selecting previously unselected package mariadb-common......................] 
+Preparing to unpack .../02-mariadb-common_1%3a10.3.39-0+deb10u1_all.deb ...
+Unpacking mariadb-common (1:10.3.39-0+deb10u1) ...
+Selecting previously unselected package galera-3............................] 
+Preparing to unpack .../03-galera-3_25.3.25-2_arm64.deb ...
+Unpacking galera-3 (25.3.25-2) .............................................] 
+Selecting previously unselected package libdbi-perl:arm64...................] 
+Preparing to unpack .../04-libdbi-perl_1.642-1+deb10u2_arm64.deb ...
+Unpacking libdbi-perl:arm64 (1.642-1+deb10u2) ...
+Selecting previously unselected package lsof................................] 
+Preparing to unpack .../05-lsof_4.91+dfsg-1_arm64.deb ...
+Unpacking lsof (4.91+dfsg-1) ...............................................] 
+Selecting previously unselected package libconfig-inifiles-perl.............] 
+Preparing to unpack .../06-libconfig-inifiles-perl_3.000001-1_all.deb ...
+Unpacking libconfig-inifiles-perl (3.000001-1) ...
+Selecting previously unselected package libaio1:arm64.......................] 
+Preparing to unpack .../07-libaio1_0.3.112-3_arm64.deb ...
+Unpacking libaio1:arm64 (0.3.112-3) ........................................] 
+Selecting previously unselected package libreadline5:arm64..................] 
+Preparing to unpack .../08-libreadline5_5.2+dfsg-3+b13_arm64.deb ...
+Progress: [ 18%] [##########................................................] 
+Selecting previously unselected package mariadb-client-core-10.3............] 
+Progress: [ 20%] [###########...............................................] 4.deb ...
+Unpacking mariadb-client-core-10.3 (1:10.3.39-0+deb10u1) ...................] 
+Progress: [ 20%] [###########...............................................] 
+Progress: [ 21%] [############..............................................]  ...
+Unpacking mariadb-client-10.3 (1:10.3.39-0+deb10u1) ...
+Selecting previously unselected package mariadb-server-core-10.3.
+Progress: [ 23%] [#############.............................................] 4.deb ...
+Unpacking mariadb-server-core-10.3 (1:10.3.39-0+deb10u1) ...
+Progress: [ 23%] [#############.............................................] 
+Progress: [ 24%] [#############.............................................] 
+Unpacking rsync (3.1.3-6) ...
+Progress: [ 26%] [##############............................................] 
+Progress: [ 26%] [###############...........................................] 
+Progress: [ 27%] [###############...........................................] 
+Setting up mysql-common (5.8+1.0.5) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up mariadb-common (1:10.3.39-0+deb10u1) ...
+Progress: [ 29%] [################..........................................]  (my.cnf) in auto mode
+Selecting previously unselected package mariadb-server-10.3.
+Progress: [ 29%] [#################.........................................] 
+Progress: [ 30%] [#################.........................................]  ...
+Unpacking mariadb-server-10.3 (1:10.3.39-0+deb10u1) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Progress: [ 32%] [##################........................................] 
+Unpacking libhtml-tagset-perl (3.20-3) ...
+Progress: [ 32%] [##################........................................] 
+Progress: [ 33%] [###################.......................................] 
+Unpacking liburi-perl (1.76-1) ...
+Selecting previously unselected package libhtml-parser-perl.
+Progress: [ 35%] [####################......................................] 
+Unpacking libhtml-parser-perl (3.72-3+b3) ...
+Progress: [ 35%] [####################......................................] 
+Progress: [ 36%] [####################......................................] 
+Unpacking libcgi-pm-perl (4.40-1) ...
+Selecting previously unselected package libfcgi-perl.
+Progress: [ 38%] [#####################.....................................] 
+Unpacking libfcgi-perl (0.78-2+b3) ...
+Progress: [ 38%] [######################....................................] 
+Progress: [ 39%] [######################....................................] 
+Unpacking libcgi-fast-perl (1:2.13-1) ...
+Selecting previously unselected package libmariadb3:arm64.
+Progress: [ 41%] [#######################...................................] 
+Unpacking libmariadb3:arm64 (1:10.3.39-0+deb10u1) ...
+Progress: [ 41%] [#######################...................................] 
+Progress: [ 42%] [########################..................................] 
+Unpacking libdbd-mysql-perl:arm64 (4.050-2) ...
+Selecting previously unselected package libencode-locale-perl.
+Progress: [ 44%] [#########################.................................] 
+Unpacking libencode-locale-perl (1.05-1) ...
+Progress: [ 44%] [#########################.................................] 
+Progress: [ 45%] [##########################................................] 
+Unpacking libhtml-template-perl (2.97-1) ...
+Selecting previously unselected package libtimedate-perl.
+Progress: [ 47%] [###########################...............................] 
+Unpacking libtimedate-perl (2.3000-2+deb10u1) ...
+Progress: [ 47%] [###########################...............................] 
+Progress: [ 48%] [###########################...............................] 
+Unpacking libhttp-date-perl (6.02-1) ...
+Selecting previously unselected package libio-html-perl.
+Progress: [ 50%] [############################..............................] 
+Unpacking libio-html-perl (1.001-1) ...
+Progress: [ 50%] [#############################.............................] 
+Progress: [ 51%] [#############################.............................] 
+Unpacking liblwp-mediatypes-perl (6.02-1) ...
+Selecting previously unselected package libhttp-message-perl.
+Progress: [ 53%] [##############################............................] 
+Unpacking libhttp-message-perl (6.18-1) ...
+Progress: [ 53%] [##############################............................] 
+Progress: [ 54%] [###############################...........................] 
+Progress: [ 56%] [################################..........................] 
+Progress: [ 57%] [#################################.........................] 
+Progress: [ 59%] [##################################........................] 
+Progress: [ 60%] [##################################........................] 
+Progress: [ 62%] [###################################.......................] 
+Progress: [ 63%] [####################################......................] 
+Progress: [ 65%] [#####################################.....................] 
+Progress: [ 66%] [######################################....................] 
+Progress: [ 68%] [#######################################...................] 
+Progress: [ 69%] [########################################..................] 
+Progress: [ 71%] [########################################..................] 
+Progress: [ 72%] [#########################################.................] 
+Progress: [ 74%] [##########################################................] 
+Progress: [ 75%] [###########################################...............] 
+Progress: [ 77%] [############################################..............] 
+Progress: [ 78%] [#############################################.............] 
+Progress: [ 80%] [##############################################............] 
+Progress: [ 80%] [##############################################............] 
+Progress: [ 81%] [###############################################...........] 
+Progress: [ 83%] [###############################################...........] 
+Progress: [ 84%] [################################################..........] 
+Progress: [ 86%] [#################################################.........] 
+Progress: [ 87%] [##################################################........] ib/systemd/system/rsync.service.
+Progress: [ 89%] [###################################################.......] 
+Progress: [ 90%] [####################################################......] 
+Progress: [ 92%] [#####################################################.....] 
+Progress: [ 93%] [######################################################....] 
+Progress: [ 95%] [######################################################....] 
+Progress: [ 95%] [#######################################################...] 
+Setting up libcgi-pm-perl (4.40-1) ...
+Setting up libhtml-template-perl (2.97-1) ...
+Progress: [ 96%] [#######################################################...] 
+Progress: [ 98%] [########################################################..] 
+Progress: [ 99%] [#########################################################.] b.service.
+Created symlink /etc/systemd/system/mysqld.service → /lib/systemd/system/mariadb.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → /lib/systemd/system/mariadb.service.
+Setting up libcgi-fast-perl (1:2.13-1) ...
+Setting up mariadb-server (1:10.3.39-0+deb10u1) ...
+Processing triggers for systemd (241-7~deb10u8) ...
+Processing triggers for man-db (2.8.5-2) ...
+Processing triggers for libc-bin (2.28-10) ...
+root@unihiker:~# 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+root@unihiker:~# sudo systemctl status mariadb
+● mariadb.service - MariaDB 10.3.39 database server
+   Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: 
+   Active: active (running) since Sun 2023-09-03 12:17:30 CST; 1min 45s ago
+     Docs: man:mysqld(8)
+           https://mariadb.com/kb/en/library/systemd/
+ Main PID: 6676 (mysqld)
+   Status: "Taking your SQL requests now..."
+   Memory: 64.8M
+   CGroup: /system.slice/mariadb.service
+           └─6676 /usr/sbin/mysqld
+
+Sep 03 12:17:29 unihiker systemd[1]: Starting MariaDB 10.3.39 database server...
+Sep 03 12:17:30 unihiker systemd[1]: Started MariaDB 10.3.39 database server.
+Sep 03 12:17:30 unihiker /etc/mysql/debian-start[6714]: /usr/bin/mysql_upgrade: 
+Sep 03 12:17:30 unihiker /etc/mysql/debian-start[6714]: Looking for 'mysql' as: 
+Sep 03 12:17:30 unihiker /etc/mysql/debian-start[6714]: Looking for 'mysqlcheck'
+Sep 03 12:17:30 unihiker /etc/mysql/debian-start[6714]: This installation of Mar
+Sep 03 12:17:30 unihiker /etc/mysql/debian-start[6714]: There is no need to run 
+Sep 03 12:17:30 unihiker /etc/mysql/debian-start[6714]: You can use --force if y
+Sep 03 12:17:31 unihiker /etc/mysql/debian-start[6728]: Triggering myisam-recove
+^C
+root@unihiker:~# mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 36
+Server version: 10.3.39-MariaDB-0+deb10u1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'your_password' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+EXIT;
+
+GRANT ALL PRIVILEGES ON unihiker.* TO 'root'@'localhost' IDENTIFIED BY 'root';
+FLUSH PRIVILEGES;
+
+pip install mysql-connector-python
+
+
+
